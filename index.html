@@ -22,8 +22,12 @@ Online HTML, CSS and JavaScript editor to run code online.
   const button2 = document.querySelector('#button2');
 
     
-    button1.addEventListener('click' , handler(url1));
-       button2.addEventListener('click' , handler(url2));
+    button1.addEventListener('click' ,function(){
+      handler(url1);
+    });
+       button2.addEventListener('click' , function(){
+      handler(url2);
+    });
     
    function handler(url){
       console.log(url);
