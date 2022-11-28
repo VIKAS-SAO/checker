@@ -13,20 +13,30 @@ Online HTML, CSS and JavaScript editor to run code online.
 <body>
   <button id ='button'>click</button>
   <button id ='button1'>click1</button>
+  <button id ='button2'>click2</button>
 
   <script >
   const button = document.querySelector('#button');
      const button1 = document.querySelector('#button1');
+     const button2 = document.querySelector('#button2');
      
      button.addEventListener("click",function(){
-       console.log('clicked');
-     location.assign("supply-debug://single_collection?collection_id=72355&collection_name=collection?utm_source=admin_ad01ebf3-4698-4bee-9a45-6442caf2ae07");
+       const url = "supply-debug://single_collection?collection_id=72355&collection_name=collection?utm_source=admin_ad01ebf3-4698-4bee-9a45-6442caf2ae07";
+       console.log(url);
+     location.assign(url);
     })
     button1.addEventListener("click",function(){
-       console.log('clicked');
-     location.assign("supply-debug://single_product?product_id=129668724&product_name=product?utm_source=admin_d3ad2a4d-0c01-428d-9a0f-2037fb4d9fa5" );
+      const url = "supply-debug://single_product?product_id=129668724&product_name=product?utm_source=admin_d3ad2a4d-0c01-428d-9a0f-2037fb4d9fa5" ;
+       console.log(url);
+     location.assign(url);
+    })
+     button2.addEventListener("click",function(){
+      const url = "supply-debug://single_product?product_id=129668724&product_name=product?utm_source=admin_d3ad2a4d-0c01-428d-9a0f-2037fb4d9fa5" ;
+       console.log(url);
+     window.open(url);
     })
   
+    
   
   </script>
 </body>
